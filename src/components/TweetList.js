@@ -3,15 +3,13 @@ import Tweet from './Tweet'
 
 class TweetList extends Component {
   componentDidMount() {
-    const ownerUsername = this.props.ownerUsername || 'sakchaicm'
-
+    const ownerUsername = this.props.ownerUsername || 'kaizerwing'
     this.props.fetchTweets(ownerUsername)
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.ownerUsername !== nextProps.ownerUsername) {
-      const ownerUsername = nextProps.ownerUsername || 'sakchaicm'
-
+      const ownerUsername = nextProps.ownerUsername || 'kaizerwing'
       this.props.fetchTweets(ownerUsername)
     }
   }

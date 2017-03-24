@@ -1,5 +1,3 @@
-//export const ADD_TWEET = 'ADD_TWEET'
-//export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const FETCH_TWEETS_SUCCESS = 'FETCH_TWEETS_SUCCESS'
-
-
+export const AUTH_LOGIN_SUCCESS = 'AUTH_LOGIN_SUCCESS'
+export const AUTH_LOGOUT = 'AUTH_LOGOUT'
